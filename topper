@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main ()
+{
+
+
+    int a;
+    int b;
+    int c;
+
+    int n,i=1;
+    printf("HOW MANY STUDENT :");
+    scanf("%d",&n);
+   for(i=1;i<=n;i++)
+   {
+    printf("ENTER MARKS OF %d STUDENT \n",n);
+    printf("ENTER SUBJECT 1)");
+    scanf("%d",&a);
+    printf("ENTER SUBJECT 2)");
+    scanf("%d",&b);
+    printf("ENTER SUBJECT 3)");
+    scanf("%d",&c);
+    if(a>b && a>b)
+   {
+     printf("TOPPER IS STUDENT = 1 %d\n",a);
+   }
+   else if(b>c && b>c)
+   {
+      printf("TOPPER IS STUDENT = 2 %d\n ",b);
+   }
+   else
+   {
+    printf("TOPPER IS STUDENT = 3 %d\n ",c);
+   }
+
+   }
+  
+    return 0;
+}

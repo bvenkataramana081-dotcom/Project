@@ -1,0 +1,56 @@
+#include<stdio.h>
+int main ()
+{
+    int deposit;
+    int withdraw;
+    int balance;
+    int chainge;
+    int out;
+    int total;
+    int sum;
+    int choice;
+    do
+    {
+        printf("1)DEPOSIT :\n");
+        printf("2)WITHDRAW :\n");
+        printf("3)CHECK BALANCE :\n");
+        printf("4)LOGOUT :\n");
+        printf("ENTER CHOICE = ");
+        scanf("%d",&choice);
+        switch(choice)
+        {
+            case 1:
+            printf("ENTER DEPOSIT MONEY :");
+            scanf("%d",&deposit);
+            if(deposit>=0)
+            {
+                printf("DEPOST SUCCESSFULL\n");
+            }
+            else
+            {
+                printf("UN SUCCESSFULL\n");
+            }
+            break;
+            case 2:
+            printf("ENTER WITHDRAW :");
+            scanf("%d",&withdraw);
+            total = deposit =- withdraw;
+            printf("WITHDRAW = %d\n",total);
+            break;
+            case 3:
+            sum = withdraw =- deposit;
+            printf("BALANCE = %d\n",sum);
+            break;
+            case 4:
+            printf("THANK YOU \n");
+            break;
+            default:
+            printf("INVALID NUMBER");
+            break;
+        }
+
+    } while (choice = 6);
+    
+
+    return 0;
+}
