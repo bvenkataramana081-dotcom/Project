@@ -1,0 +1,65 @@
+#include<stdio.h>
+int total(int a,int b,int c);
+int average(int a,int b,int c);
+
+struct student
+{
+    
+    char name[30];
+    int rollno;
+    int sub1;
+    int sub2;
+    int sub3;
+    
+};
+int main ()
+{
+    struct student  s1;
+    
+   
+    
+    printf("ENTER YOUR NAME :");
+    scanf("%s",&s1.name);
+    printf("ENTER YOUR ROLLNO :");
+    scanf("%d",&s1.rollno);
+     printf("ENTER SUBJECT 1 :");
+    scanf("%d",&s1.sub1);
+    printf("ENTER SUBJECT 2 :");
+    scanf("%d",&s1.sub2);
+    printf("ENTER SUBJECT 3 :");
+    scanf("%d",&s1.sub3);
+ //function call
+    total(s1.sub1,s1.sub2,s1.sub3);
+    // function call
+    average(s1.sub1,s1.sub2,s1.sub3);
+
+    return 0;
+}
+int total(int a,int b,int c)
+{
+    int sum;
+    sum = a+b+c;
+    printf("TOTAL MARKS = %d\n",sum);
+} 
+int average(int a,int b,int c)
+{
+    int avg;
+    avg = (a+b+c)/3;
+    printf("AVERAGE = %d\n",avg);
+    if(avg>=80)
+    {
+        printf("A GRADE");
+    }
+    else if(avg>=60 && 80<=avg)
+    {
+        printf("B GRADE");
+    }
+    else if(avg>=50 && 60<=avg)
+    {
+        printf("C GRADE");
+    }
+    else if(avg>=30 && 50<=avg)
+    {
+        printf("FAIL");
+    }
+}
